@@ -9,7 +9,7 @@
 body {
   background-image: url('img/lamb.jpg'); 
   color: #ffffff;
-  font-family: 'verdana';
+  font: 8px 'verdana';
 }
 
 h1 {

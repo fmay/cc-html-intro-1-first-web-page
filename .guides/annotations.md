@@ -67,7 +67,24 @@ main.css
 ```
 Open them both up.
 
-@annotation:tour css explain
+@annotation:tour css openup
+#Explaining the prettier version
+If you look at the `index.html` file, you'll see it has not changed one iota.
+
+##Preview it
+Now preview it again from the button in the top bar. You'll see that things have changed a lot.
+
+In the next page, we'll explain how all these changes have happened despite the `index.html` not changing at all.
+
+@annotation:tour explanation
+#Explaning what has changed
+Look at the top of `index.html` and you'll see that there is a new line added.
+
+```
+
+
+
+
 
 
 
