@@ -1,0 +1,62 @@
+body {
+    background-color: #252525;
+    margin: 0 auto;
+    font-family: Arial, Helvetica,sans-serif;
+}
+
+.container {
+    width: 250px;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+h1 {
+    padding: 20px 0;
+    text-align: center;
+    color: #fff;
+    font-size: 3em;
+    text-shadow: 1px 3px 1px #000;
+}
+
+p {
+    color: #fff;
+}
+
+a {
+    color: #e1771e;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.somewhere {
+    padding-bottom: 30px;
+}
+
+.mybackground {
+    position: relative;
+    display: inline-block;
+    text-indent: -9999px;
+    width: 250px;
+    height: 365px;
+    background: url('img/testdm3.jpg');
+    background-position: 0 0;
+}
+
+.mybackground span {
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    background: url('img/testdm3.jpg');
+    background-position: 0 -365px;
+    opacity: 0;
+    -webkit-transition: opacity 2.5s ease;
+    -moz-transition: opacity 2.5s ease;
+    -ms-transition: opacity 2.5s ease;
+    -o-transition: opacity 2.5s ease;
+    transition:  opacity 2.5s ease;
+}
+
+.mybackground span:hover {
+    opacity: 1;
+}
