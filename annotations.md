@@ -220,6 +220,65 @@ h2 {
 
 Really think about this until you get it 100%. Playing around with the code is your best bet.
 
+@annotation:tour classes
+#Using the 'class' attribute
+We are going to take one last step in terms of complexity and understand two very important features of HTML and CSS - *classes* and *ids*.
+
+From the Rocket menu, select 'Classes & IDs' and then preview it. We have now made it strikingly ugly again, but for a good reason.
+
+##What's a <div> then?
+In order to use classes efficiently in our example, we are nesting our verses inside <div> tags. A <div> defines simply a division or section in your HTML content. You will then typically add further content within your <div> as we have done. There's nothing magical about <div>s but don't worry too much about how they work just now.
+
+##What's changed?
+Look at the `index.html` file and you will see that we have <p> tags for the introductory paragraph beneath the "Mary had a little lamb" header title. However, we also have used <p> tags for the verses. How to we style them differently even though it they both use the <p> tags?Look
+
+##Classes
+The answer is that we use a class *attribute* that looks like this
+
+```
+<div class="verse">
+```
+
+By specifying this class attribute, we are associating this <div> (although you can use classes within any HTML element) with the class attribute "verse". 
+
+Wherever we now specify this attribute, we can catch it for styling purposes in our CSS. You can see that we have specified it in each verse. We could have made this even simpler if we wanted and used just a single div around all three verses (in which case you could remove the <div>s surrounding each verse). We've left all 3 to show you how they can be used any number of times on a page.
+
+Now look at `main.css`. You can see the following CSS 
+
+```
+.verse p {
+  font-size: 14px;
+  color: #99d8a0;
+}
+```
+
+`verse.p` tells the CSS to apply the styling just for the class named 'verse' and just for the <p> elements.
+
+It's as simple as that.
+
+@annotation:tour ids
+#Using the 'id' attribute
+The 'id' attribute is not nearly as useful as the 'class' attribute abd much more restrictive. In fact, you could use a class instead of an id (athough not the other way round).
+
+An 'id' can only appear one single time anywhere on a page (whereas a class can appear all over the place). In our example we have used it to override the color of the title of the second verse.
+
+In our HTML we have
+
+```
+<h2 id='red-head'>Second Verse</h2>
+```
+and in our CSS we catch this with 
+
+```
+<div class="verse">
+```
+
+@annotation:tour playclasses
+#Try to ensure you've grasped 'class' and 'id'
+Stare at the HTML and CSS files until you feel you really get what is going on. If staring doesn't help, then play around with the files and experiment, which should sort you out.
+
+If you mess your files up, just select 'Classes & IDs' again from the Rocket menu item and it will restore your files.
+
 
 @annotation:tour terms
 #Recapping on some terminology
@@ -232,6 +291,7 @@ So, make sure you are comfortable with the following terms, by referring back to
 - CSS *Selector*
 - CSS *Property*
 - CSS *Property Value*
+- Understand the difference between *class* and *id*
 
 
 @annotation:tour reference
@@ -243,6 +303,8 @@ For example, no developer knows the full list of available HTML elements or CSS 
 ##A little challenge
 So, why don't you now have a go at playing with the Prettier project and try experimenting with some changes. Below is a list of some things you might want to try. 
 
+- add a list of items and give them some basic styling (clue: research it as explained below)
+- add your own image somwhere and don't worry about making it look too beautifully positioned. To add an image, you can drag one into the `img` folder or right click the folder and upload from the desktop. Or, you can refer to an image somewhere on the Internet.
 
 ##How to research
 To help you with the above challenges, you can try any of the following research approaches
@@ -256,14 +318,37 @@ So, see what you are able to accomplish with your `index.html` and `main.css` co
 
 Don't forget, you can reset your code at any time by selecting 'Prettier' from the list in the second right most menu item at the top.
 
-@annotation tour:finally
+@annotation:tour build
+#Roll your own
+Why not create your own web page now from scratch. We've set you up with your own basic template which you can activate by selecting 'Roll your own' from the Rocket icon menu at the top.
+
+Do this on your own and show your friends. Just play around and have fun. 
+
+@annotation:tour finally
 #Finally ...
 We'll finish this course off by showing you some other fund effects that can be achieved using just HTML and CSS.
 
-From the Rocket menu item at the top, open up the list and select some of the other examples. Don't worry about understanding everything that is going on, just have a look and enjoy, and see how much you can figure out just by observing.
+Really don't worry about understanding everything that is going on, just have a look and enjoy, and see how much you can figure out just by observing.
 
+The examples are all loaded by selecting the name from the Rocket dropdown menu (second one from the right at the top with the down arrow next to it).
 
+Be sure to preview each one immediately after loading it.
 
+##Transition
+This demo shows you a really cool transition effect. Move your mouse over the image and notice that gradual transitioning in (and out when you move away) of color into the image. Then take a look at the HTML and CSS files.
+
+##Sliding Tags
+This show how animated visual tags are created using just HTML and CSS. Move your mouse over them and click. Then take a look at the HTML and CSS files.
+
+Notice how clean and simple the HTML is. The powerful stuff is done in the CSS. It's quite complex so don't worry if you don't understand it. You can always research what is going on by looking at the [Mozilla CSS property reference](https://developer.mozilla.org/en/docs/Web/CSS/Reference) or by Googling it.
+
+##Menu
+Here you'll find a nice menu constructed entirely out of HTML and CSS. Click on the buttons as well.  
+
+Again, see how clean and simple the HTML is. Generally speaking, keeping your HTML simple should be your goal. 
+
+##Newspaper
+This is a nice rendering of a newspaper layout. Notice the paper effect background. It doesn't resize horizontally, so you'll need to scroll to see the full width.
 
 
 
