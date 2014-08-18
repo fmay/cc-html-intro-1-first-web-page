@@ -1,0 +1,10 @@
+{
+// Configure your Run and Preview buttons here.
+
+// Run button configuration
+
+// Preview button configuration
+  "preview": {
+        "Preview": "https://{{domain}}/{{index}}"
+  }
+}
