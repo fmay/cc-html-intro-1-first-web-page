@@ -16,7 +16,7 @@ Before we start on looking at code, it is worth understanding the basics of the 
 
 ![Codio IDE](.guides/an-img/ide.png)
 
-The sections below correspond to the numbers in teh above screenshot and are important to know for this Course.
+The sections below correspond to the numbers in the above screenshot and are important to know for this Course.
 
 ##1. The File Tree
 Coding projects are made up of lots of files. The file tree is where these files live. It's very easy, really. You want to open a file, you click on it.
@@ -57,7 +57,7 @@ Press the button to preview. You'll now see a dull old web page appear in your b
 
 @annotation:tour qrcode
 #Got a smartphone handy?
-If you happend to have a smartphone to hand, you can run this boring web page on that, too. Go to the 'Project->QR Code Preview URL' menu option and a QR code will appear on screen. If you've got a QR code reader, you can now scan this in a view the page.
+If you happend to have a smartphone to hand, you can run this boring web page on that, too. Go to the 'Project->QR Code Preview URL' menu option and a QR code will appear on screen. If you've got a QR code reader, you can now scan this in to view the page.
 
 If you've not got one, just download a free one from your app store.
 
@@ -81,7 +81,7 @@ Here are some useful things to know about the Preview window.
 We said how boring it was. We'll try to make it marginally less boring now by at least making it look a little prettier.
 
 ##Get some new code
-Remember the Rocket menu item explained twice before). Click on the arrow to drop down the list and select `Prettier` to load a new version of our project.
+Remember the Rocket menu item (explained twice before). Click on the arrow to drop down the list and select `Prettier` to load a new version of our project.
 
 You'll notice you now have 2 files in the file tree
 
@@ -133,13 +133,13 @@ Well, every grammar has exceptions but just about every HTML tag needs a closing
 <p> ... </p>
 ```
 
-Look at the index.html file and you'll see clearly what we mean.
+Look at the `index.html` file and you'll see clearly what we mean.
 
 ##The <h1>, <h2> and <p> elements
 Look at `index.html` again and find the various HTML elements in the page. 
 
-- `<h1>` - this is a Header (leve1 1) element
-- `<h2>` - this is a Header (leve1 2) element and you'll find three of these on our page'
+- `<h1>` - this is a Header (level 1) element.
+- `<h2>` - this is a Header (level 2) element and you'll find three of these on our page.
 - `<p>` - this is a Paragraph element and you'll find lots of these. We've used one element for each line of our poem.
 
 > In our page, these elements are **children** of the `<body>` element, because they are *nested* within the `<body> ... </body>` tags.
@@ -234,14 +234,14 @@ body {
 
 - `background-image` : we point it to a file located in the img folder in our file tree on the left. You can open it up and open the image file if you like. This will be displayed as the background image for the entire page.
 - `color` : we are defining the default text color for the `<body>` element *and all of its children*
-- `font-family` : the default font family for the for the `<body>` element *and all of its children* is #ffffff (white, you can need six hexadecimal values here between 0 and 9 then a and f if you want to change it) 
+- `font-family` : the default font family for the for the `<body>` element *and all of its children* is #ffffff (white, you need six hexadecimal values here between 0 and 9 then a and f if you want to change it) 
 
 Here comes the important bit
 
 > any property settings we make for a *parent* (`<body>` in our case) element will automatically *cascade* to all its children (<h1>, <h2> and <p>).
 
 ##Overriding h1 and h2
-In our `main.css` file we can see, for example, that the settings we make in the `body` selector are displayed for the `<p>` element but *NOT* for `<h1>` or for `<h2>`. The reason for this is that we subsequejtly override <h1> and <h2> with this CSS 
+In our `main.css` file we can see, for example, that the settings we make in the `body` selector are displayed for the `<p>` element but *NOT* for `<h1>` or for `<h2>`. The reason for this is that we subsequently override <h1> and <h2> with this CSS 
 
 ```
 h1 {
@@ -269,7 +269,7 @@ From the Rocket menu, select 'Classes & IDs' and then preview it. We have manage
 In order to use classes efficiently in our example, we are nesting our verses inside <div> tags. A <div> defines simply a division or section in your HTML content. You will then typically add further content within your <div> as we have done. There's nothing magical about <div>s, so don't worry too much about them for now.
 
 ##What's changed?
-Look at the `index.html` file and you will see that we have <p> tags for the introductory paragraph beneath the "Mary had a little lamb" header title. However, we also have used <p> tags for the verses. How to we style them differently even though it they both use the <p> tags?Look
+Look at the `index.html` file and you will see that we have <p> tags for the introductory paragraph beneath the "Mary had a little lamb" header title. However, we also have used <p> tags for the verses. How do we style them differently even though they both use the <p> tags? 
 
 ##Classes
 The answer is that we use a class *attribute* that looks like this
@@ -280,7 +280,7 @@ The answer is that we use a class *attribute* that looks like this
 
 Another way of thinking about this is "this is a div and we'll give it a general classification of 'verse'".
 
-Wherever we now specify this attribute, we can catch it for styling purposes in our CSS. You can see that we have specified `class='verse'` in each verse. 
+Wherever we now specify this attribute, we can catch it for styling purposes in our CSS. You can see that we have specified `class="verse"` in each verse. 
 
 Now look at `main.css`. You can see the following CSS 
 
@@ -291,7 +291,7 @@ Now look at `main.css`. You can see the following CSS
 }
 ```
 
-`verse.p` tells the CSS to apply the styling just for the class named 'verse' and just for the <p> elements.
+`verse p` tells the CSS to apply the styling just for the class named 'verse' and just for the <p> elements.
 
 So, more formally
 
@@ -339,7 +339,7 @@ If you mess your files up, just select 'Classes & IDs' again from the Rocket men
 #Recapping on some terminology
 Terminology can seem tedious, but if you make sure you learn the correct terminology, you will find talking to others and looking things up on the Internet much easier.
 
-So, make sure you are comfortable with the following terms, by referring back to the earliter contents
+So, make sure you are comfortable with the following terms, by referring back to the earlier contents
 
 - HTML *Element*
 - *Nested* elements
@@ -383,7 +383,7 @@ Do this on your own and show your friends. Just play around and have fun.
 
 @annotation:tour finally
 #Finally ...
-We'll finish this course off by showing you some other fund effects that can be achieved using just HTML and CSS.
+We'll finish this course off by showing you some other fun effects that can be achieved using just HTML and CSS.
 
 Really don't worry about understanding everything that is going on, just have a look and enjoy, and see how much you can figure out just by observing.
 
@@ -392,10 +392,10 @@ The examples are all loaded by selecting the name from the Rocket dropdown menu 
 Be sure to preview each one immediately after loading it.
 
 ##Transition
-This demo shows you a really cool transition effect. Move your mouse over the image and notice that gradual transitioning in (and out when you move away) of color into the image. Then take a look at the HTML and CSS files.
+This demo shows you a really cool transition effect. Move your mouse over the image and notice the gradual transitioning in (and out when you move away) of color into the image. Then take a look at the HTML and CSS files.
 
 ##Sliding Tags
-This show how animated visual tags are created using just HTML and CSS. Move your mouse over them and click. Then take a look at the HTML and CSS files.
+This shows how animated visual tags are created using just HTML and CSS. Move your mouse over them and click. Then take a look at the HTML and CSS files.
 
 Notice how clean and simple the HTML is. The powerful stuff is done in the CSS. It's quite complex so don't worry if you don't understand it. You can always research what is going on by looking at the [Mozilla CSS property reference](https://developer.mozilla.org/en/docs/Web/CSS/Reference) or by Googling it.
 
