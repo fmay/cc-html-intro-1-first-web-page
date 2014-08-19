@@ -1,1 +1,20 @@
-kjhsakjshkaj shk ajsh 
+{
+// Configure your Run and Preview buttons here.
+
+	// Run button configuration
+  "commands": {
+    "Boring": "~/workspace/.guides/restore.sh boring",
+    "Prettier": "~/workspace/.guides/restore.sh prettier",
+    "Classes & IDs": "~/workspace/.guides/restore.sh classes-ids",
+    "Roll Your Own": "~/workspace/.guides/restore.sh roll-your-own",    
+    "Transition": "~/workspace/.guides/restore.sh transition",
+    "Sliding Tags": "~/workspace/.guides/restore.sh sliding-tags",
+    "Menu": "~/workspace/.guides/restore.sh menu",
+    "Newspaper": "~/workspace/.guides/restore.sh newspaper"
+  },
+  
+	// Preview button configuration
+  "preview": {
+        "Preview": "https://{{domain}}/{{index}}"
+  }
+}
