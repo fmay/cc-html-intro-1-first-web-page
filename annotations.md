@@ -28,7 +28,7 @@ Once you open a file, it will open up in a tab. Tabs can be dragged to adjust th
 This course has several projects. You are encouraged to play with the code in all of them, which means you are quite likely to mess them up. This menu allows you to restore each of these projects at will. You should click the arrow to drop down the list of items. Go ahead and play with it.
 
 ##4. Preview
-You can press this button to preview your project. Previewing runs your code in a browser area within the Codio IDE. You can also have it previewed in a separate browser tab if you prefer.
+You can press this button to preview your project. Previewing runs your code in a browser area within the Codio IDE when 'Inside Codio' is checked. You can also have it previewed in a separate browser tab if you prefer by checking 'New Browser Tab'.
 
 
 @annotation:tour example1
@@ -39,7 +39,7 @@ We're now ready to look at our first code.
 
 @annotation:tour indexhtml
 #What is index.html?
-We'll start off by opening up the file `index.html`, so go ahead and click on it in the file tree on the left.
+We'll start off by opening up the file `index.html`, so go ahead and click on it in the file tree on the left. 
 
 > The `index.html` file is the file that most web sites open up automatically when accessed by a browser. On many web sites and applications, if you access something like 'www.yoursite.com' it will usually serve up index.html.
 
@@ -49,7 +49,7 @@ We'll explain how it works in a moment, but go to the next page and we'll first 
 
 @annotation:tour preview
 ##Let's preview it now
-So, let's now run this file in our preview window. At the top of the screen you will find the Preview button.
+So, let's now run this file in our preview window. At the top of the screen you will find the Preview button. Select the drop down and first check that the 'Inside Codio' option is selected and then Preview.
 
 ![](.guides/an-img/buttons.png)
 
@@ -93,7 +93,7 @@ Open them both up by selecting them from the file tree.
 
 @annotation:tour css openup
 #Take a look at our new project
-If you look at the `index.html` file, you'll see it has not changed one iota.
+If you look at the `index.html` file, you'll see that it has not really changed.
 
 ##Preview it
 Now preview it again from the button in the top bar. You'll see that things have changed a lot.
@@ -226,7 +226,7 @@ Now look at the CSS.
 body {
   background-image: url('img/lamb.jpg'); 
   color: #ffffff;
-  font: 8px 'verdana';
+  font-family: 'verdana';
 }
 ```
 
@@ -291,9 +291,18 @@ Now look at `main.css`. You can see the following CSS
 }
 ```
 
-`verse p` tells the CSS to apply the styling just for the class named 'verse' and just for the <p> elements.
+`.verse p` tells the CSS to apply the styling just for the class named 'verse' and just for the <p> elements.
 
-So, more formally
+If we wanted to apply a style to the <div> itself, then we would just use the following (we leave out the `p`)
+
+```
+.verse {
+  font-size: 14px;
+}
+```
+
+
+So, to sum up
 
 > A class is an HTML element attribute that is used such that a style can be applied to all occurrences of that class anywhere on a single HTML page.
 
@@ -406,9 +415,6 @@ Again, see how clean and simple the HTML is. Generally speaking, keeping your HT
 
 ##Newspaper
 This is a nice rendering of a newspaper layout. Notice the paper effect background. It doesn't resize horizontally, so you'll need to scroll to see the full width.
-
-
-
 
 
 
