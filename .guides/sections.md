@@ -9,9 +9,9 @@ Welcome to your very first course in the Codio "Computing Curriculum" series of 
 
 We really hope you'll have fun learning about computing and especially how to code. You are encouraged to work with fellow students on this material. Writing code in the real world is actually a very collaborative process and so helping each other is normal and it is good.
 
-You can navigate your way through this course using the buttons at the top.
+You can navigate your way through this course using the buttons at the bottom.
 
-Click the next button to move to the next page.
+Click the next (>>) button to move to the next page.
 ---
 title: "What's an IDE?"
 files: []
