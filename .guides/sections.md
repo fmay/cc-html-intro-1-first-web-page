@@ -5,8 +5,6 @@ editable: true
 layout: 2-panels-tree
 
 ---
-#Welcome to your Codio course
-
 Welcome to your very first course in the Codio "Computing Curriculum" series of courses. 
 
 We really hope you'll have fun learning about computing and especially how to code. You are encouraged to work with fellow students on this material. Writing code in the real world is actually a very collaborative process and so helping each other is normal and it is good.
@@ -21,7 +19,6 @@ editable: true
 layout: ""
 
 ---
-#What's an IDE?
 An IDE is the tool that developers use to manage their code. In fact, you're in an IDE right now! 
 
 Before we start on looking at code, it is worth understanding the basics of the Codio IDE.
@@ -49,7 +46,6 @@ editable: true
 layout: ""
 
 ---
-#An extremely boring web page
 Having said that coding is fun, we are going to start with an exceptionally dull example. 
 
 We're now ready to look at our first code.
@@ -65,7 +61,6 @@ editable: true
 layout: ""
 
 ---
-#What is index.html?
 We'll start off by opening up the file `index.html`. This has been opened for you
 
 > The `index.html` file is the file that most web sites open up automatically when accessed by a browser. On many web sites and applications, if you access something like 'www.yoursite.com' it will usually serve up index.html.
@@ -81,7 +76,6 @@ editable: false
 layout: ""
 
 ---
-##Let's preview it now
 So, let's now run this file in our preview window. At the top of the screen you will find the Preview button. Select the drop down and first check that the 'Inside Codio' option is selected and then Preview.
 
 ![](.guides/img/buttons.png)
@@ -95,7 +89,6 @@ editable: false
 layout: ""
 
 ---
-#Got a smartphone handy?
 If you happen to have a smartphone to hand, you can run this boring web page on that, too. Go to the 'Project->QR Code Preview URL' menu option and a QR code will appear on screen. If you've got a QR code reader, you can now scan this in to view the page.
 
 If you've not got one, just download a free one from your app store.
@@ -106,7 +99,6 @@ editable: false
 layout: ""
 
 ---
-#Change something
 So feel free to go ahead and change some of the text. You can add a fourth verse if you like.
 
 ##The Preview window
@@ -126,7 +118,6 @@ editable: false
 layout: ""
 
 ---
-#Making it look prettier
 We said how boring it was. We'll try to make it marginally less boring now by at least making it look a little prettier.
 
 ##Get some new code
@@ -146,7 +137,6 @@ editable: false
 layout: ""
 
 ---
-#Take a look at our new project
 If you look at the `index.html` file, you'll see that it has not really changed.
 
 ##Preview it
@@ -161,7 +151,6 @@ editable: false
 layout: ""
 
 ---
-#Explaining what has changed
 Look at the top of `index.html` and you'll see that there is a new line added in the `<head>` section
 
 ```
@@ -178,7 +167,6 @@ editable: false
 layout: ""
 
 ---
-#Styling HTML elements
 We can now take a quick look back at our `index.html` file and see how the relationship between the various HTML elements and the CSS file works.
 
 The stuff inside `< >` are known as tags, and they surround an HTML element.
@@ -216,7 +204,6 @@ editable: false
 layout: ""
 
 ---
-#Matching the HTML elements to our CSS file
 Now take a look at `main.css`. Wherever we want to specify the appearance of an element, we simply add an entry into our CSS file in this format.
 
 ```
@@ -264,7 +251,6 @@ editable: false
 layout: ""
 
 ---
-#Make some changes
 Feel free to play around with a few values. If at any point you mess things up and don't know how to make it work again, you can do one of two things
 
 1. Trying 'Undoing' changes in a file ('Edit->Undo' menu item). Notice the keyboard shortcut next to the menu item so you don't always have to use the menu.
@@ -281,7 +267,6 @@ editable: false
 layout: ""
 
 ---
-#Inheritance
 This is a really cool feature and let's you engage your brain a bit more.
 
 A CSS file gets its name from * **C**ascading **S**tyle **S**heet*. The reason for this is that the styles you create *cascade* down into *child* elements.
@@ -346,7 +331,6 @@ editable: false
 layout: ""
 
 ---
-#Using the 'class' attribute
 We are going to take one last step in terms of complexity and understand two very important features of HTML and CSS - *classes* and *ids*.
 
 From the Rocket menu, select 'Classes & IDs' and then preview it. We have managed to make it strikingly ugly again, but for a good reason.
@@ -399,7 +383,6 @@ editable: false
 layout: ""
 
 ---
-#Making the HTML simpler
 We could have made this even simpler if we wanted and used just a single div around all three verses (in which case you could remove the <div>s surrounding each verse). We've left all 3 to show you how they can be used any number of times on a page. 
 
 Why not change the code and see if you can do this?
@@ -410,7 +393,6 @@ editable: false
 layout: ""
 
 ---
-#Using the 'id' attribute
 The 'id' attribute is not nearly as useful as the 'class' attribute and much more restrictive. 
 
 > A class can be used any number of times on a single HTML page. An 'id' can only be used one single time.
@@ -440,7 +422,6 @@ editable: false
 layout: ""
 
 ---
-#Try to ensure you've grasped 'class' and 'id'
 Stare at the HTML and CSS files until you feel you really get what is going on. If staring doesn't help, then play around with the files and experiment, which should sort you out.
 
 If you mess your files up, just select 'Classes & IDs' again from the ![](.guides/img/rocket.png) Rocket menu item and it will restore your files.
@@ -451,7 +432,6 @@ editable: false
 layout: ""
 
 ---
-#Recapping on some terminology
 Terminology can seem tedious, but if you make sure you learn the correct terminology, you will find talking to others and looking things up on the Internet much easier.
 
 So, make sure you are comfortable with the following terms, by referring back to the earlier contents
@@ -471,7 +451,6 @@ editable: false
 layout: ""
 
 ---
-#Finding out stuff on your own
 One of the skills that all professional developers have (and have to have) is the ability to research things on the web.
 
 For example, no developer knows the full list of available HTML elements or CSS selectors and their properties and possible values.
@@ -501,7 +480,6 @@ editable: false
 layout: ""
 
 ---
-#Roll your own
 Why not create your own web page now from scratch. We've set you up with your own basic template which you can activate by selecting 'Roll your own' from the Rocket icon menu at the top.
 
 Do this on your own and show your friends. Just play around and have fun. 
@@ -512,7 +490,6 @@ editable: false
 layout: ""
 
 ---
-#Finally ...
 We'll finish this course off by showing you some other fun effects that can be achieved using just HTML and CSS.
 
 Really don't worry about understanding everything that is going on, just have a look and enjoy, and see how much you can figure out just by observing.
