@@ -61,9 +61,9 @@ editable: true
 layout: ""
 
 ---
-We'll start off by opening up the file `index.html`. This has been opened for you
+We'll start off by opening up the file `index.html`. This has been opened for you but you could also click on it in the left hand *tree view*.
 
-> The `index.html` file is the file that most web sites open up automatically when accessed by a browser. On many web sites and applications, if you access something like 'www.yoursite.com' it will usually serve up index.html.
+> The `index.html` file is the file that many web sites shows when you point your browser to them. 
 
 Now it is open, you can see a familiar poem.
 
@@ -99,7 +99,7 @@ editable: false
 layout: ""
 
 ---
-So feel free to go ahead and change some of the text. You can add a fourth verse if you like.
+So feel free to go ahead and change some of the text in `index.html`. You can add a fourth verse if you like.
 
 ##The Preview window
 
@@ -254,7 +254,7 @@ layout: ""
 Feel free to play around with a few values. If at any point you mess things up and don't know how to make it work again, you can do one of two things
 
 1. Trying 'Undoing' changes in a file ('Edit->Undo' menu item). Notice the keyboard shortcut next to the menu item so you don't always have to use the menu.
-2. rom the ![](.guides/img/rocket.png) Rocket menu, select the down arrow then select the 'Prettier' item, which will get all the files back the way they were from the start.
+2. From the ![](.guides/img/rocket.png) Rocket menu, select the down arrow then select the 'Prettier' item, which will get all the files back the way they were from the start.
 
 ##Cause Damage
 Don't worry about messing up your files. Be brave, experiment hard and learn from your mistakes.
@@ -325,7 +325,7 @@ h2 {
 
 Really think about this until you get it 100%. Playing around with the code is your best bet. Again, don't be afraid to mess up your code as you can restore it from the ![](.guides/img/rocket.png) Rocket menu item.
 ---
-title: "Using the 'class' attribute"
+title: Classes
 files: []
 editable: false
 layout: ""
@@ -333,24 +333,29 @@ layout: ""
 ---
 We are going to take one last step in terms of complexity and understand two very important features of HTML and CSS - *classes* and *ids*.
 
-From the Rocket menu, select 'Classes & IDs' and then preview it. We have managed to make it strikingly ugly again, but for a good reason.
+>From the ![](.guides/img/rocket.png) Rocket menu, select 'Classes & IDs' and then preview it. We have managed to make it strikingly ugly again, but for a good reason.
 
 ##What's a <div> then?
-In order to use classes efficiently in our example, we are nesting our verses inside <div> tags. A <div> defines simply a division or section in your HTML content. You will then typically add further content within your <div> as we have done. There's nothing magical about <div>s, so don't worry too much about them for now.
+In order to use classes efficiently in our example, we are *nesting* our verses inside <div> tags. A <div> defines simply a division or section in your HTML content. You will then typically add further content within your <div> as we have done. There's nothing magical about <div>s, so don't worry too much about them for now.
 
 ##What's changed?
 Look at the `index.html` file and you will see that we have <p> tags for the introductory paragraph beneath the "Mary had a little lamb" header title. However, we also have used <p> tags for the verses. How do we style them differently even though they both use the <p> tags? 
 
-##Classes
-The answer is that we use a class *attribute* that looks like this
+#Classes
+Here's the formal definition of a class.
+
+> `class` is an HTML element attribute that is used such that a style can be applied to all occurrences of that class anywhere on a single HTML page.
+
+
+Look at the `index.html` file. Notice how the <p> elements in each verse are green whereas the <p> element above the verses is not. 
+
+By using a `class` within several HTML elements, we can apply styling rules to every occurrence of that class.
+
+See how each verse has the following class applied.
 
 ```
 <div class="verse">
 ```
-
-Another way of thinking about this is "this is a div and we'll give it a general classification of 'verse'".
-
-Wherever we now specify this attribute, we can catch it for styling purposes in our CSS. You can see that we have specified `class="verse"` in each verse. 
 
 Now look at `main.css`. You can see the following CSS 
 
@@ -363,7 +368,8 @@ Now look at `main.css`. You can see the following CSS
 
 `.verse p` tells the CSS to apply the styling just for the class named 'verse' and just for the <p> elements.
 
-If we wanted to apply a style to the <div> itself, then we would just use the following (we leave out the `p`)
+If we wanted to apply a style to the <div> itself (and all elements within the <div>
+, then we would just use the following (we leave out the `p`).
 
 ```
 .verse {
@@ -372,10 +378,6 @@ If we wanted to apply a style to the <div> itself, then we would just use the fo
 ```
 
 
-So, to sum up
-
-> A class is an HTML element attribute that is used such that a style can be applied to all occurrences of that class anywhere on a single HTML page.
-
 ---
 title: Making the HTML simpler
 files: []
@@ -383,9 +385,11 @@ editable: false
 layout: ""
 
 ---
-We could have made this even simpler if we wanted and used just a single div around all three verses (in which case you could remove the <div>s surrounding each verse). We've left all 3 to show you how they can be used any number of times on a page. 
+We could have made this even simpler if we wanted and used just a single div around all three verses (in which case you could remove the <div>s surrounding each verse). 
 
 Why not change the code and see if you can do this?
+
+If you mess things up, restore your code by selecting 'Class & IDs' again from the Rocket menu.
 ---
 title: "Using the 'id' attribute"
 files: []
@@ -393,16 +397,14 @@ editable: false
 layout: ""
 
 ---
-The 'id' attribute is not nearly as useful as the 'class' attribute and much more restrictive. 
+Let's start with a slighly formal definition of an `id`. 
 
-> A class can be used any number of times on a single HTML page. An 'id' can only be used one single time.
-
-In fact, you could use a class instead of an id, athough not the other way round as the id can only be used once.
+> An 'id' identifies a single HTML element on a page and can only be used one single time, therefore. 
 
 ##Our example
-In our example we have used an id to override the color of the title of the second verse.
+In our example we have used an `id` to override the color of the title of the second verse only.
 
-In our HTML we have
+In `index.html` we have
 
 ```
 <h2 id='red-head'>Second Verse</h2>
