@@ -1,17 +1,39 @@
 ---
-title: Welcome to your Codio course
+title: MY FIRST WEB PAGE
 files: []
 editable: true
 layout: 2-panels-tree
 
 ---
-Welcome to your very first course in the Codio "Computing Curriculum" series of courses. 
+#A few words about the Codio Guide
+Before we start with this module here are a few pointers about using this Codio Guide.
 
-We really hope you'll have fun learning about computing and especially how to code. You are encouraged to work with fellow students on this material. Writing code in the real world is actually a very collaborative process and so helping each other is normal and it is good.
+If you've already read this in another Guide then skip to the next section.
 
-You can navigate your way through this course using the buttons at the bottom.
+![](.guides/img/guides-helper.jpg)
 
-Click the next (>>) button to move to the next page.
+#The File Tree
+The left most panel is the File Tree **(1)**. This is where your project's files are stored. You can open up files you see listed there by clicking on them.
+
+#About the Codio Guide
+The Codio Guide **(2)** is the content you are reading right now. It's worth knowing the following
+
+- if you ever close the Guide tab by mistake, simply open in from the View menu **(3)**.
+- you can expand and collapse the Guide's Table of Contents **(4)** with the Hamburger icon **(5)**
+- you move from one section of the Guide to the next using either the Table of Contents or the Navigation Buttons (6)
+
+#The Rocket Menu
+The Rocket menu **(7)** is a dropdown menu that lets you load code into your file tree when you click it as different sections might want to show different bits of code.
+
+You are usually encouraged to mess around with the live code. It is perfectly likely that you can wreck the code so pressing the Rocket menu button will restore the code again to its original state.
+
+#Previewing
+The Preview button **(8)** lets you run your web application. When you press it, it will open up a preview window so you can play with your app.
+
+#Code Tabs
+When you open some code from the file tree or the Codio Guide opens a file for you automatically, they will appear within a tab **(9)** in one of the panels. You can have several of these open at one time so you may need to click on the respective tab to get to see the file you want.
+
+
 ---
 title: "What's an IDE?"
 files: []
