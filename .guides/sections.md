@@ -5,6 +5,11 @@ editable: true
 layout: 2-panels-tree
 
 ---
+#'Forking' this module
+If you check the url address bar of your browser, if it starts with `https://codio.com/anon/....` then this means it is an anonymous project and any changes you make will be lost when you close down the browser tab. This will be the case if you access the module from the Codio Courses screen.
+
+To avoid losing changes, you can 'fork' the module into your own Codio account where it will appear in your projects list. To do this, select the **'Project->Fork'** menu item and choose a suitable name for the project.
+
 #A few words about the Codio Guide
 Before we start with this module here are a few pointers about using this Codio Guide.
 
