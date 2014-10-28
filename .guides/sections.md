@@ -8,7 +8,7 @@ layout: 2-panels-tree
 #'Forking' this module
 If you check the url address bar of your browser, if it starts with `https://codio.com/anon/....` then this means it is an anonymous project and any changes you make will be lost when you close down the browser tab. This will be the case if you access the module from the Codio Courses screen.
 
-To avoid losing changes, you can 'fork' the module into your own Codio account where it will appear in your projects list. To do this, select the **'Project->Fork'** menu item and choose a suitable name for the project.
+To avoid losing changes and to ensure you have the correct access to run the tutorial, you can 'fork' the module into your own Codio account where it will appear in your projects list. To do this, select the **'Project->Fork'** menu item and choose a suitable name for the project.
 
 #A few words about the Codio Guide
 Before we start with this module here are a few pointers about using this Codio Guide.
@@ -80,7 +80,8 @@ We're now ready to look at our first code.
 ---
 title: What is index.html?
 files:
-  - path: index.html
+  - path: "#cmd: bash .guides/restore.sh boring,index.html"
+    action: open
     panel: 0
     ref: ""
     lineCount: 0
@@ -92,22 +93,26 @@ We'll start off by opening up the file `index.html`. This has been opened for yo
 
 > The `index.html` file is the file that many web sites shows when you point your browser to them. 
 
-Now it is open, you can see a familiar poem.
+Now it is open, you can see a familiar poem. 
 
 We'll explain how it works in a moment, but go to the next page and we'll first see how it looks in your browser or on your smartphone.
 
 ---
 title: "Let's preview it now"
-files: []
+files:
+  - path: "#preview"
+    action: open
+    panel: 0
+    ref: ""
 editable: false
 layout: ""
 
 ---
-So, let's now run this file in our preview window. At the top of the screen you will find the Preview button. Select the drop down and first check that the 'Inside Codio' option is selected and then Preview.
+So, let's now run this file in our preview window. We have opened the preview for you but at the top of the screen you will find the Preview button. You can also select the drop down and first check that the 'Inside Codio' option is selected and then Preview.
 
 ![](.guides/img/buttons.png)
 
-Press the button to preview. You'll now see a dull old web page appear in your browser.
+You'll now see a dull old web page appear in your browser.
 
 ---
 title: Got a smartphone handy?
@@ -120,8 +125,37 @@ If you happen to have a smartphone to hand, you can run this boring web page on 
 
 If you've not got one, just download a free one from your app store.
 ---
+title: Making it look prettier
+files:
+  - path: "#all"
+    action: close
+    panel: 0
+    ref: ""
+  - path: "#cmd: bash .guides/restore.sh prettier"
+    action: open
+    panel: 0
+    ref: ""
+editable: true
+layout: ""
+
+---
+We said how boring it was. We'll try to make it marginally less boring now by at least making it look a little prettier.
+
+
+You'll notice you now have 2 files in the file tree
+
+```
+index.html
+main.css
+```
+
+---
 title: Change something
-files: []
+files:
+  - path: index.html
+    action: open
+    panel: 0
+    ref: ""
 editable: false
 layout: ""
 
@@ -139,41 +173,35 @@ Here are some useful things to know about the Preview window.
 - notice you are given the URL of your project. As long as your project is open, this can be used from any browser anywhere.
 
 ---
-title: Making it look prettier
-files: []
-editable: false
-layout: ""
-
----
-We said how boring it was. We'll try to make it marginally less boring now by at least making it look a little prettier.
-
-##Get some new code
-Remember the Rocket menu item (explained twice before). Click the ![](.guides/img/rocket.png) Rocket menu at the top and select `Prettier` to load a new version of our project.
-
-You'll notice you now have 2 files in the file tree
-
-```
-index.html
-main.css
-```
-Open them both up by selecting them from the file tree.
----
 title: Take a look at our new project
-files: []
-editable: false
+files:
+  - path: index.html
+    action: open
+    panel: 0
+    ref: ""
+editable: true
 layout: ""
 
 ---
 If you look at the `index.html` file, you'll see that it has not really changed.
 
 ##Preview it
-Now preview it again from the button in the top bar. You'll see that things have changed a lot.
+Now preview it again from the button in the top bar (or [Click here](open_preview index.html panel=0)). You'll see that things have changed a lot.
 
 In the next page, we'll explain how all these changes have happened despite the `index.html` not changing at all.
 
 ---
 title: Explaining what has changed
-files: []
+files:
+  - path: index.html
+    action: open
+    panel: 0
+    ref: "<link rel=\"stylesheet\" type=\"text/css\" href=\"main.css\">"
+    lineCount: 1
+  - path: "#preview"
+    action: close
+    panel: 0
+    ref: ""
 editable: false
 layout: ""
 
@@ -189,8 +217,13 @@ This tells the browser that is needs to go and find the file called `main.css` (
 `main.css` is what is known as a **stylesheet**. It contains instructions about how to visually style the various parts of the web page.
 ---
 title: Styling HTML elements
-files: []
-editable: false
+files:
+  - path: index.html
+    action: open
+    panel: 0
+    ref: "<body>"
+    lineCount: 20
+editable: true
 layout: ""
 
 ---
@@ -226,8 +259,16 @@ Look at `index.html` again and find the various HTML elements in the page.
 
 ---
 title: Matching the HTML elements to our CSS file
-files: []
-editable: false
+files:
+  - path: main.css
+    action: open
+    panel: 0
+    ref: ""
+  - path: index.html
+    action: close
+    panel: 0
+    ref: ""
+editable: true
 layout: ""
 
 ---
@@ -289,7 +330,11 @@ Don't worry about messing up your files. Be brave, experiment hard and learn fro
 You'd be surprised how much trial and error goes in the the world of coding.
 ---
 title: Inheritance
-files: []
+files:
+  - path: "index.html, main.css"
+    action: open
+    panel: 0
+    ref: ""
 editable: false
 layout: ""
 
@@ -353,20 +398,27 @@ h2 {
 Really think about this until you get it 100%. Playing around with the code is your best bet. Again, don't be afraid to mess up your code as you can restore it from the ![](.guides/img/rocket.png) Rocket menu item.
 ---
 title: Classes
-files: []
-editable: false
+files:
+  - path: "#all"
+    action: close
+    panel: 0
+    ref: ""
+  - path: "#cmd: bash .guides/restore.sh classes-ids"
+    action: open
+    ref: ""
+editable: true
 layout: ""
 
 ---
 We are going to take one last step in terms of complexity and understand two very important features of HTML and CSS - *classes* and *ids*.
 
->From the ![](.guides/img/rocket.png) Rocket menu, select 'Classes & IDs' and then preview it. We have managed to make it strikingly ugly again, but for a good reason.
+>We have loaded new content for you but if you need to restore you can do from the ![](.guides/img/rocket.png) Rocket menu, select 'Classes & IDs'.  Preview your project again. We have managed to make it strikingly ugly again, but for a good reason.
 
 ##What's a <div> then?
 In order to use classes efficiently in our example, we are *nesting* our verses inside <div> tags. A <div> defines simply a division or section in your HTML content. You will then typically add further content within your <div> as we have done. There's nothing magical about <div>s, so don't worry too much about them for now.
 
 ##What's changed?
-Look at the `index.html` file and you will see that we have <p> tags for the introductory paragraph beneath the "Mary had a little lamb" header title. However, we also have used <p> tags for the verses. How do we style them differently even though they both use the <p> tags? 
+**[Click here](open_file index.html)** to look at the `index.html` file and you will see that we have <p> tags for the introductory paragraph beneath the "Mary had a little lamb" header title. However, we also have used <p> tags for the verses. How do we style them differently even though they both use the <p> tags? 
 
 #Classes
 Here's the formal definition of a class.
@@ -384,7 +436,7 @@ See how each verse has the following class applied.
 <div class="verse">
 ```
 
-Now look at `main.css`. You can see the following CSS 
+Now **[Click here](open_file main.css)** to look at `main.css`. You can see the following CSS 
 
 ```
 .verse p {
@@ -514,7 +566,15 @@ Why not create your own web page now from scratch. We've set you up with your ow
 Do this on your own and show your friends. Just play around and have fun. 
 ---
 title: Finally ...
-files: []
+files:
+  - path: "index.html, main.css"
+    action: close
+    panel: 0
+    ref: ""
+  - path: "#cmd: bash .guides/restore2folder.sh transition sliding-tags menu newspaper"
+    action: open
+    panel: 0
+    ref: ""
 editable: false
 layout: ""
 
@@ -523,22 +583,30 @@ We'll finish this course off by showing you some other fun effects that can be a
 
 Really don't worry about understanding everything that is going on, just have a look and enjoy, and see how much you can figure out just by observing.
 
-The examples are all loaded by selecting the name from the Rocket dropdown menu (second one from the right at the top with the down arrow next to it).
+You can load the examples by selecting the name from the Rocket dropdown menu (second one from the right at the top with the down arrow next to it) or by using the 'Click here' in each area below that will also preview the files for you.
 
 Be sure to preview each one immediately after loading it.
 
 ##Transition
+**[Click here](close_all; open_files transition/index.html transition/main.css; open_preview transition/index.html) to load the code and to open the files and preview.**
+
 This demo shows you a really cool transition effect. Move your mouse over the image and notice the gradual transitioning in (and out when you move away) of color into the image. Then take a look at the HTML and CSS files.
 
 ##Sliding Tags
+**[Click here](close_all; open_files sliding-tags/index.html sliding-tags/main.css; open_preview sliding-tags/index.html) to load the code and to open the files and preview.**
+
 This shows how animated visual tags are created using just HTML and CSS. Move your mouse over them and click. Then take a look at the HTML and CSS files.
 
 Notice how clean and simple the HTML is. The powerful stuff is done in the CSS. It's quite complex so don't worry if you don't understand it. You can always research what is going on by looking at the [Mozilla CSS property reference](https://developer.mozilla.org/en/docs/Web/CSS/Reference) or by Googling it.
 
 ##Menu
+**[Click here](close_all; open_files menu/index.html menu/main.css; open_preview menu/index.html) to load the code and to open the files and preview.**
+
 Here you'll find a nice menu constructed entirely out of HTML and CSS. Click on the buttons as well. We'd actually need a little bit of Javascript to make the buttons stay pressed. We'll get to that later. 
 
 Again, see how clean and simple the HTML is. Generally speaking, keeping your HTML simple should be your goal. 
 
 ##Newspaper
+**[Click here](close_all; open_files newspaper/index.html newspaper/main.css; open_preview newspaper/index.html) to load the code and to open the files and preview.**
+
 This is a nice rendering of a newspaper layout. Notice the paper effect background. It doesn't resize horizontally, so you'll need to scroll to see the full width.
