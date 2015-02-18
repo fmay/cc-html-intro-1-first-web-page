@@ -1,0 +1,376 @@
+@import url('//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
+
+body {
+    color: #414852;
+    font-family: sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0px;
+}
+
+    h1,
+    h2 {
+        margin: 20px 0 15px;
+        padding: 0 0 5px;
+        border-bottom: 1px solid #EAEFF3;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    h3 {
+        font-size: 20px;
+        margin: 20px 0 0;
+    }
+
+    h4 {
+        font-size: 16px;
+        margin: 15px 0 0;
+    }
+
+    h5 {
+        font-size: 14px;
+        margin: 15px 0 0;
+    }
+
+    h6 {
+        font-size: 14px;
+        margin: 15px 0 0;
+    }
+
+    p,blockquote,ul,ol,dl,table,pre {
+        margin: 15px 0;
+    }
+
+    hr {
+        border: 1px solid #EAEFF3;
+        height: 4px;
+        padding: 0;
+    }
+
+    h2:first-child,
+    h1:first-child,
+    h1:first-child+h2,
+    h3:first-child,
+    h4:first-child,
+    h5:first-child,
+    h6:first-child {
+        margin-top: 0;
+        padding-top: 0;
+    }
+
+    a:first-child h1,
+    a:first-child h2,
+    a:first-child h3,
+    a:first-child h4,
+    a:first-child h5,
+    a:first-child h6 {
+        margin-top: 0;
+        padding-top: 0;
+    }
+
+    h1+p,h2+p,h3+p,h4+p,h5+p,h6+p {
+        margin-top: 0;
+    }
+
+    ul,ol {
+        padding-left: 30px;
+    }
+
+    ul li>:first-child,
+    ul li ul:first-of-type,
+    ol li>:first-child,
+    ol li ul:first-of-type {
+        margin-top: 0px;
+    }
+
+    ul ul,ul ol,ol ol,ol ul {
+        margin-bottom: 0;
+    }
+
+    dl {
+        padding: 0;
+    }
+
+    dl dt {
+        font-size: 14px;
+        font-weight: bold;
+        font-style: italic;
+        padding: 0;
+        margin: 15px 0 5px;
+    }
+
+    dl dt:first-child {
+        padding: 0;
+    }
+
+    dl dt>:first-child {
+        margin-top: 0px;
+    }
+
+    dl dt>:last-child {
+        margin-bottom: 0px;
+    }
+
+    dl dd {
+        margin: 0 0 15px;
+        padding: 0 15px;
+    }
+
+    dl dd>:first-child {
+        margin-top: 0px;
+    }
+
+    dl dd>:last-child {
+        margin-bottom: 0px;
+    }
+
+    ul li {
+        line-height: 23px;
+    }
+
+    blockquote {
+        border-left: 2px solid #DDD;
+        padding: 0 15px;
+        color: #777;
+    }
+
+    blockquote>:first-child {
+        margin-top: 0px;
+    }
+
+    blockquote>:last-child {
+        margin-bottom: 0px;
+    }
+
+    table th {
+        font-weight: bold;
+    }
+
+    table th,table td {
+        border: 1px solid #ccc;
+        padding: 6px 13px;
+    }
+
+    table tr {
+        border-top: 1px solid #ccc;
+        background-color: #fff;
+    }
+
+    table tr:nth-child(2n) {
+        background-color: #f8f8f8;
+    }
+
+    img {
+        max-width: 100%;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    pre {
+        padding: 1em;
+        overflow: auto;
+        background-color: #F7F7FA;
+        border-radius: 4px;
+
+    }
+    pre code, pre code.highlight, pre tt {
+        font-family: "source-code-pro", Monaco, Menlo, Consolas, "Courier New", 
+
+monospace;
+        font-size: 13px;
+        line-height: 23px;
+        background: none;
+        display: block;
+    }
+    pre code::before, pre code.highlight::before, pre tt::before,
+    pre code::after, pre code.highlight::after, pre tt::after {
+        content: '';
+    }
+
+
+    code,
+    tt {
+        padding: 0;
+        padding-top: 0.2em;
+        padding-bottom: 0.2em;
+        margin: 0;
+        background-color: #F7F7FA;
+        border-radius: 4px;
+        font-size: 12px;
+        font-family: "source-code-pro", Monaco, Menlo, Consolas, "Courier New", 
+
+monospace;
+        line-height: 23px;
+    }
+    tt::before, tt::after,
+    code::after, code::before {
+        letter-spacing: -0.2em;
+        content: "\00a0"
+    }
+
+h1, h2 {
+    border-bottom: none;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 300;
+    color: #5988e1;
+}
+
+blockquote {
+
+    border-left: 2px solid #77A7E1;
+    padding: 1em;
+    overflow: auto;
+    background-color: #F7F7FA;
+    border-radius: 0 4px 4px 0;
+    color: #414852;
+}
+
+blockquote h1,
+blockquote h2,
+blockquote h3,
+blockquote h4,
+blockquote h5,
+blockquote h6 {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 26px;
+    margin: 0 0 10px;
+}
+
+/* highilight css */
+/*
+
+github.com style (c) Vasily Polovnyov <vast@whiteants.net>
+
+*/
+
+.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  color: #333;
+  background: #f8f8f8;
+  -webkit-text-size-adjust: none;
+}
+
+.hljs-comment,
+.hljs-template_comment,
+.diff .hljs-header,
+.hljs-javadoc {
+  color: #998;
+  font-style: italic;
+}
+
+.hljs-keyword,
+.css .rule .hljs-keyword,
+.hljs-winutils,
+.javascript .hljs-title,
+.nginx .hljs-title,
+.hljs-subst,
+.hljs-request,
+.hljs-status {
+  color: #333;
+  font-weight: bold;
+}
+
+.hljs-number,
+.hljs-hexcolor,
+.ruby .hljs-constant {
+  color: #008080;
+}
+
+.hljs-string,
+.hljs-tag .hljs-value,
+.hljs-phpdoc,
+.hljs-dartdoc,
+.tex .hljs-formula {
+  color: #d14;
+}
+
+.hljs-title,
+.hljs-id,
+.scss .hljs-preprocessor {
+  color: #900;
+  font-weight: bold;
+}
+
+.javascript .hljs-title,
+.hljs-list .hljs-keyword,
+.hljs-subst {
+  font-weight: normal;
+}
+
+.hljs-class .hljs-title,
+.hljs-type,
+.vhdl .hljs-literal,
+.tex .hljs-command {
+  color: #458;
+  font-weight: bold;
+}
+
+.hljs-tag,
+.hljs-tag .hljs-title,
+.hljs-rules .hljs-property,
+.django .hljs-tag .hljs-keyword {
+  color: #000080;
+  font-weight: normal;
+}
+
+.hljs-attribute,
+.hljs-variable,
+.lisp .hljs-body {
+  color: #008080;
+}
+
+.hljs-regexp {
+  color: #009926;
+}
+
+.hljs-symbol,
+.ruby .hljs-symbol .hljs-string,
+.lisp .hljs-keyword,
+.clojure .hljs-keyword,
+.scheme .hljs-keyword,
+.tex .hljs-special,
+.hljs-prompt {
+  color: #990073;
+}
+
+.hljs-built_in {
+  color: #0086b3;
+}
+
+.hljs-preprocessor,
+.hljs-pragma,
+.hljs-pi,
+.hljs-doctype,
+.hljs-shebang,
+.hljs-cdata {
+  color: #999;
+  font-weight: bold;
+}
+
+.hljs-deletion {
+  background: #fdd;
+}
+
+.hljs-addition {
+  background: #dfd;
+}
+
+.diff .hljs-change {
+  background: #0086b3;
+}
+
+.hljs-chunk {
+  color: #aaa;
+}

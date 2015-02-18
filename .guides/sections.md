@@ -1,48 +1,47 @@
 ---
 title: MY FIRST WEB PAGE
 files: []
-editable: true
 layout: 2-panels-tree
+step: boring
 
 ---
-#'Forking' this module
+# 'Forking' this module
 If you check the url address bar of your browser, if it starts with `https://codio.com/anon/....` then this means it is an anonymous project and any changes you make will be lost when you close down the browser tab. This will be the case if you access the module from the Codio Courses screen.
 
 To avoid losing changes and to ensure you have the correct access to run the tutorial, you can 'fork' the module into your own Codio account where it will appear in your projects list. To do this, select the **'Project->Fork'** menu item and choose a suitable name for the project.
 
-#A few words about the Codio Guide
+# A few words about the Codio Guide
 Before we start with this module here are a few pointers about using this Codio Guide.
 
 If you've already read this in another Guide then skip to the next section.
 
 ![](.guides/img/guides-helper.jpg)
 
-#The File Tree
+# The File Tree
 The left most panel is the File Tree **(1)**. This is where your project's files are stored. You can open up files you see listed there by clicking on them.
 
-#About the Codio Guide
+# About the Codio Guide
 The Codio Guide **(2)** is the content you are reading right now. It's worth knowing the following
 
 - if you ever close the Guide tab by mistake, simply open in from the View menu **(3)**.
 - you can expand and collapse the Guide's Table of Contents **(4)** with the Hamburger icon **(5)**
 - you move from one section of the Guide to the next using either the Table of Contents or the Navigation Buttons (6)
 
-#The Rocket Menu
+# The Rocket Menu
 The Rocket menu **(7)** is a dropdown menu that lets you load code into your file tree when you click it as different sections might want to show different bits of code.
 
 You are usually encouraged to mess around with the live code. It is perfectly likely that you can wreck the code so pressing the Rocket menu button will restore the code again to its original state.
 
-#Previewing
+# Previewing
 The Preview button **(8)** lets you run your web application. When you press it, it will open up a preview window so you can play with your app.
 
-#Code Tabs
+# Code Tabs
 When you open some code from the file tree or the Codio Guide opens a file for you automatically, they will appear within a tab **(9)** in one of the panels. You can have several of these open at one time so you may need to click on the respective tab to get to see the file you want.
 
 
 ---
 title: "What's an IDE?"
 files: []
-editable: true
 layout: ""
 
 ---
@@ -54,22 +53,21 @@ Before we start on looking at code, it is worth understanding the basics of the 
 
 The sections below correspond to the numbers in the above screenshot and are important to know for this Course.
 
-##1. The File Tree
+## 1. The File Tree
 Coding projects are made up of lots of files. The file tree is where these files live. It's very easy, really. You want to open a file, you click on it.
 
-##2. Tabs
+## 2. Tabs
 Once you open a file, it will open up in a tab. Tabs can be dragged to adjust their order or from one pane (you can see 2 big panes in the image) to another.
 
-##3. Rocket Menu
+## 3. Rocket Menu
 This course has several projects. You are encouraged to play with the code in all of them, which means you are quite likely to mess them up. This menu allows you to restore each of these projects at will. You should click the arrow from the ![](.guides/img/rocket.png) Rocket menu item to drop down the list of items. Go ahead and play with it.
 
-##4. Preview
+## 4. Preview
 You can press this button to preview your project. Previewing runs your code in a browser area within the Codio IDE when 'Inside Codio' is checked. You can also have it previewed in a separate browser tab if you prefer by checking 'New Browser Tab'.
 
 ---
 title: An extremely boring web page
 files: []
-editable: true
 layout: ""
 
 ---
@@ -85,7 +83,6 @@ files:
     panel: 0
     ref: ""
     lineCount: 0
-editable: true
 layout: ""
 
 ---
@@ -104,7 +101,6 @@ files:
     action: open
     panel: 0
     ref: ""
-editable: false
 layout: ""
 
 ---
@@ -117,7 +113,6 @@ You'll now see a dull old web page appear in your browser.
 ---
 title: Got a smartphone handy?
 files: []
-editable: false
 layout: ""
 
 ---
@@ -135,7 +130,6 @@ files:
     action: open
     panel: 0
     ref: ""
-editable: true
 layout: ""
 
 ---
@@ -156,13 +150,12 @@ files:
     action: open
     panel: 0
     ref: ""
-editable: false
 layout: ""
 
 ---
 So feel free to go ahead and change some of the text in `index.html`. You can add a fourth verse if you like.
 
-##The Preview window
+## The Preview window
 
 ![](.guides/img/preview.png)
 
@@ -179,13 +172,12 @@ files:
     action: open
     panel: 0
     ref: ""
-editable: true
 layout: ""
 
 ---
 If you look at the `index.html` file, you'll see that it has not really changed.
 
-##Preview it
+## Preview it
 Now preview it again from the button in the top bar (or [Click here](open_preview index.html panel=0)). You'll see that things have changed a lot.
 
 In the next page, we'll explain how all these changes have happened despite the `index.html` not changing at all.
@@ -202,7 +194,6 @@ files:
     action: close
     panel: 0
     ref: ""
-editable: false
 layout: ""
 
 ---
@@ -223,7 +214,6 @@ files:
     panel: 0
     ref: "<body>"
     lineCount: 20
-editable: true
 layout: ""
 
 ---
@@ -231,12 +221,12 @@ We can now take a quick look back at our `index.html` file and see how the relat
 
 The stuff inside `< >` are known as tags, and they surround an HTML element.
 
-##The <body> element
+## The &lt;body&gt; element
 Let's jump to the `<body>` tag. You'll see, at the very bottom of the file, the **closing tag**, which is `</body>`. Everything in between the opening and closing tags is a part of the `<body>` element.
 
 Each web page's contents is always defined within the `<body>` element. 
 
-##You must close Tags!!!
+## You must close Tags!!!
 Well, every grammar has exceptions but just about every HTML tag needs a closing tag to match the opening tag.
 
 ```
@@ -248,7 +238,7 @@ Well, every grammar has exceptions but just about every HTML tag needs a closing
 
 Look at the `index.html` file and you'll see clearly what we mean.
 
-##The <h1>, <h2> and <p> elements
+## The &lt;h1&gt;, &lt;h2&gt;, &lt;p&gt; elements
 Look at `index.html` again and find the various HTML elements in the page. 
 
 - `<h1>` - this is a Header (level 1) element.
@@ -268,7 +258,6 @@ files:
     action: close
     panel: 0
     ref: ""
-editable: true
 layout: ""
 
 ---
@@ -283,8 +272,8 @@ selector {
 }
 ```
 
-##Styling <h1> elements
-So, to style the `<h1>` element of our page, we have created an `h1` *selector* in `main.css` with a `font` property :
+## Styling &lt;h1&gt; elements
+So, to style the `<h1>` element of our page, we have created an `<h1>` *selector* in `main.css` with a `font` property :
 
 ```
 h1 {
@@ -296,7 +285,7 @@ This is saying, that wherever we encounter an `<h1>` HTML element, we want to di
 
 > A *selector* is text pattern in a CSS file that matches an HTML element in an HTML file. If a match is made, then the CSS rule attached to that selector will be applied to the HTML element.
 
-##Styling <p> elements
+## Styling &lt;p&gt; elements
 You will also see that we have styled the `<p>` elements like this :
 
 ```
@@ -315,7 +304,6 @@ This is doing a little more, namely
 ---
 title: Make some changes
 files: []
-editable: false
 layout: ""
 
 ---
@@ -324,7 +312,7 @@ Feel free to play around with a few values. If at any point you mess things up a
 1. Trying 'Undoing' changes in a file ('Edit->Undo' menu item). Notice the keyboard shortcut next to the menu item so you don't always have to use the menu.
 2. From the ![](.guides/img/rocket.png) Rocket menu, select the down arrow then select the 'Prettier' item, which will get all the files back the way they were from the start.
 
-##Cause Damage
+## Cause Damage
 Don't worry about messing up your files. Be brave, experiment hard and learn from your mistakes.
 
 You'd be surprised how much trial and error goes in the the world of coding.
@@ -335,7 +323,6 @@ files:
     action: open
     panel: 0
     ref: ""
-editable: false
 layout: ""
 
 ---
@@ -368,7 +355,7 @@ body {
 }
 ```
 
-`body` is the first *selector* we have defined in our CSS file and it has the following properties
+`<body>` is the first *selector* we have defined in our CSS file and it has the following properties
 
 - `background-image` : we point it to a file located in the img folder in our file tree on the left. You can open it up and open the image file if you like. This will be displayed as the background image for the entire page.
 - `color` : we are defining the default text color for the `<body>` element *and all of its children*
@@ -376,10 +363,11 @@ body {
 
 Here comes the important bit
 
-> any property settings we make for a *parent* (`<body>` in our case) element will automatically *cascade* to all its children (<h1>, <h2> and <p>).
+>any property settings we make for a *parent* (`<body>` in our case) element will automatically *cascade* to all its children (`<h1>`, `<h2>` and `<p>`).
 
-##Overriding h1 and h2
-In our `main.css` file we can see, for example, that the settings we make in the `body` selector are displayed for the `<p>` element but *NOT* for `<h1>` or for `<h2>`. The reason for this is that we subsequently override <h1> and <h2> with this CSS 
+
+## Overriding &lt;h1&gt; and &lt;h2&gt;
+In our `main.css` file we can see, for example, that the settings we make in the `<body>` selector are displayed for the `<p>` element but *NOT* for `<h1>` or for `<h2>`. The reason for this is that we subsequently override `<h1>` and `<h2>` with this CSS 
 
 ```
 h1 {
@@ -392,8 +380,8 @@ h2 {
 }
 ```
 
-- `h1` gets a new font and a font-size assigned to it `font: 32px 'Courier'
-- `h2` will keep the font ('verdana') specified in the `body` selector but the font size gets changed with `font-size: 20px`
+- `<h1>` gets a new font and a font-size assigned to it `font: 32px 'Courier'
+- `<h2>` will keep the font ('verdana') specified in the `<body` selector but the font size gets changed with `font-size: 20px`
 
 Really think about this until you get it 100%. Playing around with the code is your best bet. Again, don't be afraid to mess up your code as you can restore it from the ![](.guides/img/rocket.png) Rocket menu item.
 ---
@@ -406,7 +394,6 @@ files:
   - path: "#cmd: bash .guides/restore.sh classes-ids"
     action: open
     ref: ""
-editable: true
 layout: ""
 
 ---
@@ -414,19 +401,19 @@ We are going to take one last step in terms of complexity and understand two ver
 
 >We have loaded new content for you but if you need to restore you can do from the ![](.guides/img/rocket.png) Rocket menu, select 'Classes & IDs'.  Preview your project again. We have managed to make it strikingly ugly again, but for a good reason.
 
-##What's a <div> then?
-In order to use classes efficiently in our example, we are *nesting* our verses inside <div> tags. A <div> defines simply a division or section in your HTML content. You will then typically add further content within your <div> as we have done. There's nothing magical about <div>s, so don't worry too much about them for now.
+## What's a &lt;div&gt; then?
+In order to use classes efficiently in our example, we are *nesting* our verses inside `<div>` tags. A `<div>` defines simply a division or section in your HTML content. You will then typically add further content within your `<div>` as we have done. There's nothing magical about &lt;div&gt;'s, so don't worry too much about them for now.
 
-##What's changed?
-**[Click here](open_file index.html)** to look at the `index.html` file and you will see that we have <p> tags for the introductory paragraph beneath the "Mary had a little lamb" header title. However, we also have used <p> tags for the verses. How do we style them differently even though they both use the <p> tags? 
+## What's changed?
+**[Click here](open_file index.html)** to look at the `index.html` file and you will see that we have `<p>` tags for the introductory paragraph beneath the "Mary had a little lamb" header title. However, we also have used `<p>` tags for the verses. How do we style them differently even though they both use the `<p>` tags? 
 
-#Classes
+# Classes
 Here's the formal definition of a class.
 
 > `class` is an HTML element attribute that is used such that a style can be applied to all occurrences of that class anywhere on a single HTML page.
 
 
-Look at the `index.html` file. Notice how the <p> elements in each verse are green whereas the <p> element above the verses is not. 
+Look at the `index.html` file. Notice how the <p> elements in each verse are green whereas the `<p>` element above the verses is not. 
 
 By using a `class` within several HTML elements, we can apply styling rules to every occurrence of that class.
 
@@ -445,10 +432,10 @@ Now **[Click here](open_file main.css)** to look at `main.css`. You can see the 
 }
 ```
 
-`.verse p` tells the CSS to apply the styling just for the class named 'verse' and just for the <p> elements.
+`.verse p` tells the CSS to apply the styling just for the class named 'verse' and just for the `<p>` elements.
 
-If we wanted to apply a style to the <div> itself (and all elements within the <div>
-, then we would just use the following (we leave out the `p`).
+If we wanted to apply a style to the `<div>` itself (and all elements within the `<div>`
+, then we would just use the following (we leave out the `<p>`).
 
 ```
 .verse {
@@ -460,11 +447,10 @@ If we wanted to apply a style to the <div> itself (and all elements within the <
 ---
 title: Making the HTML simpler
 files: []
-editable: false
 layout: ""
 
 ---
-We could have made this even simpler if we wanted and used just a single div around all three verses (in which case you could remove the <div>s surrounding each verse). 
+We could have made this even simpler if we wanted and used just a single div around all three verses (in which case you could remove the &lt;div&gt;'s surrounding each verse). 
 
 Why not change the code and see if you can do this?
 
@@ -472,7 +458,6 @@ If you mess things up, restore your code by selecting 'Class & IDs' again from t
 ---
 title: "Using the 'id' attribute"
 files: []
-editable: false
 layout: ""
 
 ---
@@ -480,7 +465,7 @@ Let's start with a slighly formal definition of an `id`.
 
 > An 'id' identifies a single HTML element on a page and can only be used one single time, therefore. 
 
-##Our example
+## Our example
 In our example we have used an `id` to override the color of the title of the second verse only.
 
 In `index.html` we have
@@ -499,7 +484,6 @@ The `#red-head` selector indicates the application of an id.
 ---
 title: "Try to ensure you've grasped 'class' and 'id'"
 files: []
-editable: false
 layout: ""
 
 ---
@@ -509,7 +493,6 @@ If you mess your files up, just select 'Classes & IDs' again from the ![](.guide
 ---
 title: Recapping on some terminology
 files: []
-editable: false
 layout: ""
 
 ---
@@ -528,7 +511,6 @@ So, make sure you are comfortable with the following terms, by referring back to
 ---
 title: Finding out stuff on your own
 files: []
-editable: false
 layout: ""
 
 ---
@@ -536,14 +518,14 @@ One of the skills that all professional developers have (and have to have) is th
 
 For example, no developer knows the full list of available HTML elements or CSS selectors and their properties and possible values.
 
-##A little challenge
+## A little challenge
 So, why don't you now have a go at playing with the Prettier project and try experimenting with some changes. Below is a list of some things you might want to try. 
 
 - add a list of items and give them some basic styling (clue: research it as explained below)
 - add your own image somwhere and don't worry about making it look too beautifully positioned. To add an image, you can drag one into the `img` folder or right click the folder and upload from the desktop. Or, you can refer to an image somewhere on the Internet.
 - come up with your own challenge
 
-##How to research
+## How to research
 To help you with the above challenges, you can try any of the following research approaches
 
 - Google "bullet points HTML"
@@ -557,7 +539,6 @@ Don't forget, you can reset your code at any time by selecting 'Prettier' from t
 ---
 title: Roll your own
 files: []
-editable: false
 layout: ""
 
 ---
@@ -575,7 +556,6 @@ files:
     action: open
     panel: 0
     ref: ""
-editable: false
 layout: ""
 
 ---
@@ -587,26 +567,26 @@ You can load the examples by selecting the name from the Rocket dropdown menu (s
 
 Be sure to preview each one immediately after loading it.
 
-##Transition
-**[Click here](close_all; open_files transition/index.html transition/main.css; open_preview transition/index.html) to load the code and to open the files and preview.**
+## Transition
+**[Click here](close_all; open_files transition/index.html transition/main.css; open_preview transition/index.html) to load the code, open the files and preview.**
 
 This demo shows you a really cool transition effect. Move your mouse over the image and notice the gradual transitioning in (and out when you move away) of color into the image. Then take a look at the HTML and CSS files.
 
-##Sliding Tags
-**[Click here](close_all; open_files sliding-tags/index.html sliding-tags/main.css; open_preview sliding-tags/index.html) to load the code and to open the files and preview.**
+## Sliding Tags
+**[Click here](close_all; open_files sliding-tags/index.html sliding-tags/main.css; open_preview sliding-tags/index.html) to load the code, open the files and preview.**
 
 This shows how animated visual tags are created using just HTML and CSS. Move your mouse over them and click. Then take a look at the HTML and CSS files.
 
 Notice how clean and simple the HTML is. The powerful stuff is done in the CSS. It's quite complex so don't worry if you don't understand it. You can always research what is going on by looking at the [Mozilla CSS property reference](https://developer.mozilla.org/en/docs/Web/CSS/Reference) or by Googling it.
 
-##Menu
-**[Click here](close_all; open_files menu/index.html menu/main.css; open_preview menu/index.html) to load the code and to open the files and preview.**
+## Menu
+**[Click here](close_all; open_files menu/index.html menu/main.css; open_preview menu/index.html) to load the code, open the files and preview.**
 
 Here you'll find a nice menu constructed entirely out of HTML and CSS. Click on the buttons as well. We'd actually need a little bit of Javascript to make the buttons stay pressed. We'll get to that later. 
 
 Again, see how clean and simple the HTML is. Generally speaking, keeping your HTML simple should be your goal. 
 
-##Newspaper
-**[Click here](close_all; open_files newspaper/index.html newspaper/main.css; open_preview newspaper/index.html) to load the code and to open the files and preview.**
+## Newspaper
+**[Click here](close_all; open_files newspaper/index.html newspaper/main.css; open_preview newspaper/index.html) to load the code, open the files and preview.**
 
 This is a nice rendering of a newspaper layout. Notice the paper effect background. It doesn't resize horizontally, so you'll need to scroll to see the full width.
